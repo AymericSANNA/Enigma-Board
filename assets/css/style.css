@@ -150,6 +150,7 @@ h1 {
 
 .maj:focus,
 .touch:focus,
+.enigme:focus,
 .return:focus,
 .color:focus {
 	animation: pressKey 0.1s linear;
