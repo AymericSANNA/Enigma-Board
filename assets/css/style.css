@@ -1,0 +1,184 @@
+/* Import font styles*/
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=IM+Fell+English+SC&family=Rubik+Distressed&display=swap");
+
+body {
+	text-align: center;
+	font-family: "IM Fell English SC", serif;
+	background-color: #252525;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: 4rem;
+    font-weight: 100;
+	color: rgb(167, 167, 167);
+	text-shadow: 3px 3px rgb(1, 37, 61);
+	margin-bottom: 2rem;
+}
+
+.board {
+	background: url(../img/blackboard.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 2rem 1rem 4rem;
+	width: 70%;
+	height: 500px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.sub-title {
+	font-size: 150%;
+	color: #fff;
+}
+
+.selection {
+    width: 40%;
+	margin: auto;
+    text-align: center;
+	padding-bottom: 5vh;
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+}
+
+.enigme {
+	font-size: 120%;
+	background-color: #a59f65;
+	font-weight: 500;
+	box-shadow: #4e4721 0px 5px;
+	width: 23%;
+	height: 8vh;
+	margin: 1%;
+	color: #4e4721;
+}
+
+.level {
+	margin-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+.typewriter {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+
+.keyboard {
+	padding-top: 2rem;
+}
+.keyboard,
+.letters,
+.others {
+	margin: 0 auto;
+}
+.others {
+	padding-bottom: 5rem;
+}
+.others,
+.letters {
+	width: 37rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.maj,
+.return,
+.touch,
+.enigme,
+.color {
+	font-family: "IM Fell English SC", serif;
+	border-radius: 5px;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+}
+
+
+
+.letter,
+.color {
+	background: #a59f65;
+	font-size: 1.7rem;
+	width: 3rem;
+	font-weight: 500;
+	box-shadow: #4e4721 0px 5px;
+	margin-right: 0.5rem;
+	margin-bottom: 0.9rem;
+	color: #4e4721;
+}
+
+.return {
+	width: auto;
+	font-size: 1rem;
+	padding: 0 0.5rem;
+	color: #fff;
+	background: #4b4b4b;
+	box-shadow: #303030 0px 5px;
+	margin-left: 1rem;
+	justify-self: flex-end;
+}
+
+.maj,
+.space {
+	background: #4b4b4b;
+	box-shadow: #303030 0px 5px;
+	height: 3rem;
+	width: 25rem;
+}
+
+.maj {
+	height: 3rem;
+	width: 3rem;
+	margin-right: 0.5rem;
+	font-size: 1.7rem;
+	color: #ffffff;
+}
+
+.maj:focus,
+.touch:focus,
+.return:focus,
+.color:focus {
+	animation: pressKey 0.1s linear;
+}
+
+.maj.pressed {
+	color: rgb(59, 59, 59);
+	background: #d6d6d6;
+	box-shadow: #747474 0px 5px;
+}
+
+.text {
+	padding-top: 2rem;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 2rem;
+}
+
+@keyframes pressKey {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translateY(5px);
+        box-shadow: none;
+    }
+}
+
+.emoji {
+    display: none;
+}
