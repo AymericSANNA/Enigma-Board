@@ -80,16 +80,24 @@ h1 {
 .keyboard {
 	padding-top: 1vh;
 }
+
 .keyboard,
 .letters,
 .others {
 	margin: 0 auto;
 }
+
 .others {
 	padding-bottom: 5rem;
 }
+.emoji .letter {
+	font-size: 3.1vw;
+    font-weight: 900;
+}
+
 .others,
 .numbers,
+.emoji,
 .letters {
 	width: 100%;
 	display: flex;
@@ -185,7 +193,7 @@ h1 {
 
 .emoji {
     display: none;
-}
+} 
 
 @media screen and (min-width: 768px) {
 	h1 {
@@ -244,6 +252,11 @@ h1 {
 		margin-top: 21px;
 		padding-top: 15px;
 		padding-bottom: 15px;
+	}
+
+	.emoji .letter {
+		font-size: 20px;
+		font-weight: 900;
 	}
 
 	.enigme {
