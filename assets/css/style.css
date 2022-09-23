@@ -19,7 +19,7 @@ p {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 10vw;
     font-weight: 100;
 	color: rgb(167, 167, 167);
 	text-shadow: 3px 3px rgb(1, 37, 61);
@@ -31,7 +31,7 @@ h1 {
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	padding: 4vh 1rem 8vh;
+	padding: 4vw 1rem 8vh;
 	width:100%;
 	margin: auto;
 	margin-top: 1rem;
@@ -40,7 +40,7 @@ h1 {
 }
 
 .sub-title {
-	font-size: 1.5;
+	font-size: 4.5vw;
 	color: #fff;
 }
 
@@ -60,15 +60,15 @@ h1 {
 	font-weight: 500;
 	box-shadow: #4e4721 0px 5px;
 	width: 23%;
-	height: 7vh;
+	height: 9vw;
 	margin: 1%;
 	color: #4e4721;
 }
 
 .level {
-	margin-top: 3vh;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+	margin-top: 5vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
 }
 
 .typewriter {
@@ -131,19 +131,21 @@ h1 {
 	box-shadow: #303030 0px 5px;
 	margin-left: 2vw;
 	justify-self: flex-end;
+	margin-top: 3vh;
 }
 
 .maj,
 .space {
 	background: #4b4b4b;
 	box-shadow: #303030 0px 5px;
-	height: 5vh;
+	height: 8vw;
 	width: 60vw;
+	margin-top: 3vh;
 }
 
 .maj {
-	height: 5vh;
-	width: 5vh;
+	height: 8vw;
+	width: 8vw;
 	margin-right: 0.5rem;
 	font-size: 1.7rem;
 	color: #ffffff;
@@ -186,6 +188,10 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
+	h1 {
+		font-size: 7vw;
+	}
+
     .selection{
         width: 60%;
     }
@@ -194,12 +200,17 @@ h1 {
 		font-size: 2.5vw;
 	}
 
+	.level {
+		margin-top: 2vw;
+	}
+
 	.enigme {
 		font-size: 2vw;
+		height: 6vw;
 	}
 
 	.board {
-		height: 350px;
+		height: 50vw;
 		width: 80%;
 	}
 	.keyboard{
@@ -209,7 +220,71 @@ h1 {
 		width: 9%;
 		margin-right: 0.5vw;
 	}
+	.maj,
+	.space,
+	.return {
+		height: 5vw;
+	}
 	.space {
 		width: 40vw;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    
+	h1 {
+		font-size: 72px;
+	}
+	.text,
+	.sub-title {
+		font-size: 26px;
+	}
+
+	.level {
+		margin-top: 21px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.enigme {
+		font-size: 20.5px;
+		height: 61.5px;
+		width: 139px;
+	}
+
+	.board {
+		height: 512px;
+		padding: 15px 1rem 20px;
+	}
+	
+	.selection,
+	.keyboard{
+		width: 605px;
+	}
+	.letter {
+		width: 54px;
+		height: 38px;
+		margin-right: 5.5px;
+		margin-bottom: 7px;
+	}
+	.maj,
+	.space,
+	.return {
+		height: 51px;
+	}
+
+	.return{
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+	.maj{
+        width: 81px;
+	}
+
+	.sub-title{
+		font-size: 26px;
+	}
+	.space {
+		width: 410px;
 	}
 }

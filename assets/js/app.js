@@ -57,7 +57,6 @@ const gameBoard = {
         gameBoard.selectEnigme = document.querySelectorAll('.enigme');// All Enigme elements
         
 
-
         // Listener:
         backElement.addEventListener('click', gameBoard.handleBack); // Erase a letter on click
         gameBoard.majElement.addEventListener('click', gameBoard.pressed); // Enable or Disable Shift button on click
