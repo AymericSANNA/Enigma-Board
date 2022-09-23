@@ -155,7 +155,7 @@ h1 {
 	height: 8vw;
 	width: 8vw;
 	margin-right: 0.5rem;
-	font-size: 1.7rem;
+	font-size: 4vw;
 	color: #ffffff;
 }
 
@@ -232,6 +232,9 @@ h1 {
 	.space,
 	.return {
 		height: 5vw;
+	}
+	.maj{
+		font-size: 1.7rem;
 	}
 	.space {
 		width: 40vw;
