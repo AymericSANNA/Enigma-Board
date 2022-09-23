@@ -1,6 +1,7 @@
 /* Import font styles*/
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=IM+Fell+English+SC&family=Rubik+Distressed&display=swap");
 
+
 body {
 	text-align: center;
 	font-family: "IM Fell English SC", serif;
@@ -30,43 +31,44 @@ h1 {
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	padding: 2rem 1rem 4rem;
-	width: 70%;
-	height: 500px;
+	padding: 4vh 1rem 8vh;
+	width:100%;
 	margin: auto;
+	margin-top: 1rem;
 	text-align: center;
 	margin-bottom: 1rem;
 }
 
 .sub-title {
-	font-size: 150%;
+	font-size: 1.5;
 	color: #fff;
 }
 
 .selection {
-    width: 40%;
+    width: 100%;
 	margin: auto;
     text-align: center;
-	padding-bottom: 5vh;
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: center; */
 }
 
 .enigme {
-	font-size: 120%;
+	font-size: 3.1vw;
+	font-weight: 900;
+	letter-spacing: -0.5px;
 	background-color: #a59f65;
 	font-weight: 500;
 	box-shadow: #4e4721 0px 5px;
 	width: 23%;
-	height: 8vh;
+	height: 7vh;
 	margin: 1%;
 	color: #4e4721;
 }
 
 .level {
-	margin-top: 2rem;
-	padding-bottom: 1rem;
+	margin-top: 3vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
 }
 
 .typewriter {
@@ -76,7 +78,7 @@ h1 {
 }
 
 .keyboard {
-	padding-top: 2rem;
+	padding-top: 1vh;
 }
 .keyboard,
 .letters,
@@ -87,8 +89,9 @@ h1 {
 	padding-bottom: 5rem;
 }
 .others,
+.numbers,
 .letters {
-	width: 37rem;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -107,17 +110,15 @@ h1 {
 	outline: none;
 }
 
-
-
-.letter,
-.color {
+.letter{
 	background: #a59f65;
 	font-size: 1.7rem;
-	width: 3rem;
+	height: auto;
+	width: 7.5vw;
 	font-weight: 500;
 	box-shadow: #4e4721 0px 5px;
-	margin-right: 0.5rem;
-	margin-bottom: 0.9rem;
+	margin-right: 1.5vw;
+	margin-bottom: 1vh;
 	color: #4e4721;
 }
 
@@ -128,7 +129,7 @@ h1 {
 	color: #fff;
 	background: #4b4b4b;
 	box-shadow: #303030 0px 5px;
-	margin-left: 1rem;
+	margin-left: 2vw;
 	justify-self: flex-end;
 }
 
@@ -136,13 +137,13 @@ h1 {
 .space {
 	background: #4b4b4b;
 	box-shadow: #303030 0px 5px;
-	height: 3rem;
-	width: 25rem;
+	height: 5vh;
+	width: 60vw;
 }
 
 .maj {
-	height: 3rem;
-	width: 3rem;
+	height: 5vh;
+	width: 5vh;
 	margin-right: 0.5rem;
 	font-size: 1.7rem;
 	color: #ffffff;
@@ -163,10 +164,10 @@ h1 {
 }
 
 .text {
-	padding-top: 2rem;
+	padding-top:1.5;
 	display: inline-block;
 	white-space: nowrap;
-	font-size: 2rem;
+	font-size: 1.8;
 }
 
 @keyframes pressKey {
@@ -182,4 +183,33 @@ h1 {
 
 .emoji {
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .selection{
+        width: 60%;
+    }
+
+	.sub-title {
+		font-size: 2.5vw;
+	}
+
+	.enigme {
+		font-size: 2vw;
+	}
+
+	.board {
+		height: 350px;
+		width: 80%;
+	}
+	.keyboard{
+		width: 60%;
+	}
+	.letter {
+		width: 9%;
+		margin-right: 0.5vw;
+	}
+	.space {
+		width: 40vw;
+	}
 }
