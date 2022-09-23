@@ -1,0 +1,290 @@
+/* Import font styles*/
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=IM+Fell+English+SC&family=Rubik+Distressed&display=swap");
+
+
+body {
+	text-align: center;
+	font-family: "IM Fell English SC", serif;
+	background-color: #252525;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: 10vw;
+    font-weight: 100;
+	color: rgb(167, 167, 167);
+	text-shadow: 3px 3px rgb(1, 37, 61);
+	margin-bottom: 2rem;
+}
+
+.board {
+	background: url(../img/blackboard.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 4vw 1rem 8vh;
+	width:100%;
+	margin: auto;
+	margin-top: 1rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.sub-title {
+	font-size: 4.5vw;
+	color: #fff;
+}
+
+.selection {
+    width: 100%;
+	margin: auto;
+    text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.enigme {
+	font-size: 3.1vw;
+	font-weight: 900;
+	letter-spacing: -0.5px;
+	background-color: #a59f65;
+	font-weight: 500;
+	box-shadow: #4e4721 0px 5px;
+	width: 23%;
+	height: 9vw;
+	margin: 1%;
+	color: #4e4721;
+}
+
+.level {
+	margin-top: 5vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+}
+
+.typewriter {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+
+.keyboard {
+	padding-top: 1vh;
+}
+.keyboard,
+.letters,
+.others {
+	margin: 0 auto;
+}
+.others {
+	padding-bottom: 5rem;
+}
+.others,
+.numbers,
+.letters {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.maj,
+.return,
+.touch,
+.enigme,
+.color {
+	font-family: "IM Fell English SC", serif;
+	border-radius: 5px;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+}
+
+.letter{
+	background: #a59f65;
+	font-size: 1.7rem;
+	height: auto;
+	width: 7.5vw;
+	font-weight: 500;
+	box-shadow: #4e4721 0px 5px;
+	margin-right: 1.5vw;
+	margin-bottom: 1vh;
+	color: #4e4721;
+}
+
+.return {
+	width: auto;
+	font-size: 1rem;
+	padding: 0 0.5rem;
+	color: #fff;
+	background: #4b4b4b;
+	box-shadow: #303030 0px 5px;
+	margin-left: 2vw;
+	justify-self: flex-end;
+	margin-top: 3vh;
+}
+
+.maj,
+.space {
+	background: #4b4b4b;
+	box-shadow: #303030 0px 5px;
+	height: 8vw;
+	width: 60vw;
+	margin-top: 3vh;
+}
+
+.maj {
+	height: 8vw;
+	width: 8vw;
+	margin-right: 0.5rem;
+	font-size: 1.7rem;
+	color: #ffffff;
+}
+
+.maj:focus,
+.touch:focus,
+.enigme:focus,
+.return:focus,
+.color:focus {
+	animation: pressKey 0.1s linear;
+}
+
+.maj.pressed {
+	color: rgb(59, 59, 59);
+	background: #d6d6d6;
+	box-shadow: #747474 0px 5px;
+}
+
+.text {
+	padding-top:1.5;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 1.8;
+}
+
+@keyframes pressKey {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translateY(5px);
+        box-shadow: none;
+    }
+}
+
+.emoji {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 7vw;
+	}
+
+    .selection{
+        width: 60%;
+    }
+
+	.sub-title {
+		font-size: 2.5vw;
+	}
+
+	.level {
+		margin-top: 2vw;
+	}
+
+	.enigme {
+		font-size: 2vw;
+		height: 6vw;
+	}
+
+	.board {
+		height: 50vw;
+		width: 80%;
+	}
+	.keyboard{
+		width: 60%;
+	}
+	.letter {
+		width: 9%;
+		margin-right: 0.5vw;
+	}
+	.maj,
+	.space,
+	.return {
+		height: 5vw;
+	}
+	.space {
+		width: 40vw;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    
+	h1 {
+		font-size: 72px;
+	}
+	.text,
+	.sub-title {
+		font-size: 26px;
+	}
+
+	.level {
+		margin-top: 21px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.enigme {
+		font-size: 20.5px;
+		height: 61.5px;
+		width: 139px;
+	}
+
+	.board {
+		height: 512px;
+		padding: 15px 1rem 20px;
+	}
+	
+	.selection,
+	.keyboard{
+		width: 605px;
+	}
+	.letter {
+		width: 54px;
+		height: 38px;
+		margin-right: 5.5px;
+		margin-bottom: 7px;
+	}
+	.maj,
+	.space,
+	.return {
+		height: 51px;
+	}
+
+	.return{
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+	.maj{
+        width: 81px;
+	}
+
+	.sub-title{
+		font-size: 26px;
+	}
+	.space {
+		width: 410px;
+	}
+}
