@@ -232,7 +232,7 @@ const gameBoard = {
         if (message == "Emoji" || message == "EMOJI" || message == "emoji"){
             gameBoard.emojiElement.style.display = "inline-block";
         }
-        if (message == "La Malle" || message == "LA MALLE" || message == "la malle" || message == "Une Malle" || message == "UNE MALLE" || message == "une malle" || message == "Malle" || message == "MALLE" || message == "malle") {
+        if (message == "La malle" || message == "LA MALLE" || message == "la malle" || message == "Une malle" || message == "UNE MALLE" || message == "une malle" || message == "Malle" || message == "MALLE" || message == "malle") {
             gameBoard.levelElement.textContent = "Enigme - 2";
             gameBoard.typewriterElement.textContent = "Comme le coton, il est léger,";
             gameBoard.typewriter2Element.textContent = "Et de glace il est constitué.";
@@ -245,7 +245,7 @@ const gameBoard = {
             gameBoard.selectEnigme1.style.boxShadow = "rgba(140,140,140) 0px 5px";
             gameBoard.checkAllAnswers(); // Check all answers in the game.
         }
-        if (message == "Le Flocon" || message == "LE FLOCON" || message == "le flocon" || message == "un flocon" || message == "Un Flocon" || message == "UN FLOCON" || message == "flocon" || message == "FLOCON" || message == "Flocon") {
+        if (message == "Le flocon" || message == "LE FLOCON" || message == "le flocon" || message == "un flocon" || message == "Un flocon" || message == "UN FLOCON" || message == "flocon" || message == "FLOCON" || message == "Flocon") {
             gameBoard.levelElement.textContent = "Enigme - 3";
             gameBoard.typewriterElement.textContent = "Souvent associé au printemps,";
             gameBoard.typewriter2Element.textContent = "On peut aussi plonger dedans.";
@@ -258,7 +258,7 @@ const gameBoard = {
             gameBoard.selectEnigme2.style.boxShadow = "rgba(140,140,140) 0px 5px";
             gameBoard.checkAllAnswers(); // Check all answers in the game.
         }
-        if (message == "Le Rouleau" || message == "LE ROULEAU" || message == "le rouleau" || message == "Une Rouleau" || message == "UNE ROULEAU" || message == "une rouleau" || message == "rouleau" || message == "ROULEAU" || message == "Rouleau") {
+        if (message == "Le rouleau" || message == "LE ROULEAU" || message == "le rouleau" || message == "Un rouleau" || message == "UN ROULEAU" || message == "un rouleau" || message == "rouleau" || message == "ROULEAU" || message == "Rouleau") {
             gameBoard.levelElement.textContent = "Enigme - 4";
             gameBoard.typewriterElement.textContent = "On compte sur elle pour le transport,";
             gameBoard.typewriter2Element.textContent = "C'est une bête qu'il faut ménager.";
@@ -271,7 +271,7 @@ const gameBoard = {
             gameBoard.selectEnigme3.style.boxShadow = "rgba(140,140,140) 0px 5px";
             gameBoard.checkAllAnswers(); // Check all answers in the game.
         }
-        if (message == "La Monture" || message == "LA MONTURE" || message == "la monture" || message == "Une Monture" || message == "UNE MONTURE" || message == "une monture" || message == "monture" || message == "MONTURE" || message == "Monture") {
+        if (message == "La monture" || message == "LA MONTURE" || message == "la monture" || message == "Une monture" || message == "UNE MONTURE" || message == "une monture" || message == "monture" || message == "MONTURE" || message == "Monture") {
             gameBoard.levelElement.textContent = "Enigme - 5";
             gameBoard.typewriterElement.textContent = "Utile pour le dessin,";
             gameBoard.typewriter2Element.textContent = "On l'imite quand on l'aime bien.";
@@ -284,7 +284,7 @@ const gameBoard = {
             gameBoard.selectEnigme4.style.boxShadow = "rgba(140,140,140) 0px 5px";
             gameBoard.checkAllAnswers(); // Check all answers in the game.
         }
-        if (message == "Le Modele" || message == "LE MODELE" || message == "le modele" || message == "un modele" || message == "Un Modele" || message == "UN MODELE" || message == "modele" || message == "MODELE" || message == "Modele") {
+        if (message == "Le modele" || message == "LE MODELE" || message == "le modele" || message == "un modele" || message == "Un modele" || message == "UN MODELE" || message == "modele" || message == "MODELE" || message == "Modele") {
             gameBoard.levelElement.textContent = "Enigme - 6";
             gameBoard.typewriterElement.textContent = "Capable de marcher sur la tête,";
             gameBoard.typewriter2Element.textContent = "Avec ses œufs on ne fait pas d'omelette.";
@@ -297,7 +297,7 @@ const gameBoard = {
             gameBoard.selectEnigme5.style.boxShadow = "rgba(140,140,140) 0px 5px";
             gameBoard.checkAllAnswers(); // Check all answers in the game.
         }
-        if (message == "Le Pou" || message == "LE POU" || message == "le pou" || message == "un pou" || message == "Un Pou" || message == "UN POU" || message == "Pou" || message == "POU" || message == "pou") {
+        if (message == "Le pou" || message == "LE POU" || message == "le pou" || message == "un pou" || message == "Un pou" || message == "UN POU" || message == "Pou" || message == "POU" || message == "pou") {
             gameBoard.levelElement.textContent = "Enigme - 7";
             gameBoard.typewriterElement.textContent = "En équilibre sur sa pointe fine,";
             gameBoard.typewriter2Element.textContent = "C'est une chose enfantine.";
@@ -310,7 +310,7 @@ const gameBoard = {
             gameBoard.selectEnigme6.style.boxShadow = "rgba(140,140,140) 0px 5px";
             gameBoard.checkAllAnswers(); // Check all answers in the game.
         }
-        if (message == "La Toupie" || message == "LA TOUPIE" || message == "la toupie" || message == "Une Toupie" || message == "UNE TOUPIE" || message == "une toupie" || message == "toupie" || message == "TOUPIE" || message == "Toupie") {
+        if (message == "La toupie" || message == "LA TOUPIE" || message == "la toupie" || message == "Une toupie" || message == "UNE TOUPIE" || message == "une toupie" || message == "toupie" || message == "TOUPIE" || message == "Toupie") {
             gameBoard.levelElement.textContent = "Terminé !";
             gameBoard.typewriterElement.textContent = "Avez-vous répondu";
             gameBoard.typewriter2Element.textContent = "À toutes les énigmes ?";
