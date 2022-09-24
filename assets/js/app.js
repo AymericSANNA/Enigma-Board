@@ -1,5 +1,7 @@
-// Objet représentant l'écran défilant Advertizr
+
 const gameBoard = {
+
+    //TODO factorisation du code pour changer les messages (création d'un tableau contenant les différentes énigmes et boucler dessus)
 
     /**
      * Propriétés
@@ -175,7 +177,7 @@ const gameBoard = {
             gameBoard.typewriterElement.textContent = "Utile pour le dessin,";
             gameBoard.typewriter2Element.textContent = "On l'imite quand on l'aime bien.";
             gameBoard.typewriter3Element.textContent = "Il adore défiler.";
-            gameBoard.typewriter4Element.textContent = "Et peut-être déposer.";
+            gameBoard.typewriter4Element.textContent = "Et peut-être déposé.";
             gameBoard.typewriter5Element.textContent = "Qui est-il ?";
             gameBoard.textElement.textContent = "";
         }
@@ -213,19 +215,6 @@ const gameBoard = {
             }
             gameBoard.screenElement.style.color = 'darkmagenta';
             gameBoard.majElement.style.backgroundColor = "darkred";
-            gameBoard.majElement.style.color = "white";
-            gameBoard.majElement.style.boxShadow = "white 0px 5px";
-        }
-        if (message == "kevin" || message == "Kevin" || message == "KEVIN") {
-            for (let index = 0; index < gameBoard.keyElement.length; index++) {
-                gameBoard.keyElement[index].style.backgroundColor = "black";
-                gameBoard.keyElement[index].style.color = "white";
-                gameBoard.keyElement[index].style.boxShadow = "white 0px 5px";
-                gameBoard.keyElement[index].textContent = '☠️';
-            }
-
-            gameBoard.screenElement.style.color = 'white';
-            gameBoard.majElement.style.backgroundColor = "black";
             gameBoard.majElement.style.color = "white";
             gameBoard.majElement.style.boxShadow = "white 0px 5px";
         }
@@ -276,7 +265,7 @@ const gameBoard = {
             gameBoard.typewriterElement.textContent = "Utile pour le dessin,";
             gameBoard.typewriter2Element.textContent = "On l'imite quand on l'aime bien.";
             gameBoard.typewriter3Element.textContent = "Il adore défiler.";
-            gameBoard.typewriter4Element.textContent = "Et peut-être déposer.";
+            gameBoard.typewriter4Element.textContent = "Et peut-être déposé.";
             gameBoard.typewriter5Element.textContent = "Qui est-il ?";
             gameBoard.textElement.textContent = "";
             gameBoard.selectEnigme4.textContent = "Enigme - 4 (Résolue)";
@@ -315,8 +304,8 @@ const gameBoard = {
             gameBoard.typewriterElement.textContent = "Avez-vous répondu";
             gameBoard.typewriter2Element.textContent = "À toutes les énigmes ?";
             gameBoard.typewriter3Element.textContent = "Si oui, alors Félicitations ! 🎉 ";
-            gameBoard.typewriter4Element.textContent = "Si non, sélectionnez le level,";
-            gameBoard.typewriter5Element.textContent = "qui n'est pas résolu 💪";
+            gameBoard.typewriter4Element.textContent = "Si non, sélectionnez une énigme,";
+            gameBoard.typewriter5Element.textContent = "qui n'est pas résolue 💪";
             gameBoard.textElement.textContent = "";
             gameBoard.selectEnigme7.textContent = "Enigme - 7 (Résolue)";
             gameBoard.selectEnigme7.style.backgroundColor = "rgba(180,180,180)";
